@@ -1,6 +1,6 @@
 {% set name = "ecmwf-datastores-client" %}
 {% set version = "0.5.3" %}
-{% set python_min = "3.9" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -23,10 +23,10 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - attrs
-    - multiurl >=0.3.2
-    - requests
-    - typing_extensions
+    - attrs >=23.1.0
+    - multiurl >=0.3.7
+    - requests >=2.5.0
+    - typing_extensions >=4.13.0
 
 test:
   imports:
