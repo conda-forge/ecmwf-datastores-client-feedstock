@@ -1,5 +1,5 @@
 {% set name = "ecmwf-datastores-client" %}
-{% set version = "0.5.3" %}
+{% set version = "0.6.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ecmwf_datastores_client-{{ version }}.tar.gz
-  sha256: 15bd614a138c88fc8f6556aefdb4f2e3a5107ad1fc8b7ba18fab06dd69e3ec52
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/ecmwf_datastores_client-{{ version }}.tar.gz
+  sha256: 2a82791682e63dbee4db3b736d9b399dea5766a4573181fdd0eb0343124e5972
 
 build:
   noarch: python
